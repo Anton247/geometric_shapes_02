@@ -10,6 +10,9 @@ def find_contours(img, color):
     return contours
 
 img = cv2.imread("pool_two_bins.jpg")
+if img == None:
+    print("Не найдена картинка!")
+    exit()
 drawing = img.copy()
 color = (
           (30, 80, 0),
